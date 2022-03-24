@@ -8,7 +8,7 @@ function App() {
           Daniel Johansen
         </h1>
         <p>
-          Kommer snart
+          Siden Kommer snart
         </p>
       </header>
     </div>
