@@ -1,0 +1,78 @@
+.header{
+    background-color: #EEA47FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    color: #404040
+}
+button{
+    background: none;
+	color: inherit;
+	border: 2px solid #EEA47FFF;
+	padding: .25rem;
+	font: inherit;
+	cursor: pointer;
+}
+
+.header-some img{
+    border: 1px solid #EEA47FFF;
+}
+
+.header-some img:hover{
+    border-color: #404040;
+}
+
+button:hover{
+    border-color: #404040;
+}
+
+.header-some{
+    border-bottom: 1px solid #404040;
+    margin-bottom: .25rem;
+}
+
+.header-tabs{
+    border-top: 1px solid #404040;
+    margin-top: .25rem;
+}
+
+.header-tabs button{
+    margin-top: .25rem;
+}
+
+.header-some img{
+    height: 1.5rem;
+    width: auto;
+}
+
+@media only screen and (min-width: 750px){
+    .header{
+        flex-direction: row;
+    }
+
+    .header-some{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .header-title{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-tabs{
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+    }
+
+    .header-tabs button{
+        margin: 0;
+    }
+}
