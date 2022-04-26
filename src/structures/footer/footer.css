@@ -1,0 +1,38 @@
+.footer {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+.footer__title {
+  color: var(--white);
+  font-family: var(--roboto);
+  font-weight: bold;
+}
+
+.footer__contact {
+  list-style-type: none;
+  color: var(--white);
+  font-family: var(--roboto);
+  font-weight: bold;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.footer__contact a {
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+.footer__contact a:hover {
+  color: var(--dark-blue);
+}
+
+.footer_rights {
+  color: var(--white);
+  font-family: var(--roboto);
+  font-weight: bold;
+}

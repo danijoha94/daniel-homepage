@@ -1,25 +1,39 @@
-html{
+:root {
+  --dark: #171321;
+  --dark-blue: #2f3096;
+  --blue: #3b3ee3;
+  --yellow: #dae330;
+  --dark-magenta: #961184;
+  --magenta: #e324c9;
+  --white: #fff;
+  --dark-grey: #1c465e;
+  --mono: "Cutive Mono", monospace;
+  --roboto: "Roboto", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+h1,
+h2,
+h3,
+p,
+.App,
+section,
+ul {
   margin: 0;
   padding: 0;
 }
 
-h1{
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-p{
-  margin: 0;
+.devider {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.6);
 }
-
-.App{
-  background-color: #00539CFF;
-  height: 100vh;
-  font-family: sans-serif;
-}
-
-html, 
-body {
-    height: 100%;
-    background-color: #00539CFF;
-}
-

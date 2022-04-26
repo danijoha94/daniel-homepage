@@ -1,22 +1,52 @@
-import './header.css'
-export default function Header(props){
-    const {changePage} = props;
+import "./header.css";
+export default function Header() {
 
-    return(
-        <div className="header"> 
-            <div className="header-some">
-                <a href="https://www.facebook.com/daniel.johansen.33" target="_blank"><img src="/assets/facebook.svg"/></a>
-                <a href="https://www.linkedin.com/in/daniel-johansen-60a50a15a/" target="_blank"><img src="/assets/linkedin.svg"/></a>
-            </div>
-            <div className="header-title">
-                <button onClick={() => changePage('homepage')}>
-                    <h1>Daniel Johansen</h1>
-                </button>
-            </div>
-            <div className="header-tabs">
-                <button onClick={() => changePage('about')}>Om meg</button>
-                <button onClick={() => changePage('contact')}>Kontakt</button>
-            </div>
-        </div>
-    );
+  return (
+    <section className='header'>
+      <div className="header__blur">
+        <nav className='header__nav'>
+          <ul className='header__nav-list'>
+            <li>
+              <a href='#'>
+                <h2>Daniel Johansen</h2>
+              </a>
+            </li>
+            <li>
+              <a href='#'>Prosjekter</a>
+            </li>
+            <li>
+              <a href='#'>Om meg</a>
+            </li>
+            <li>
+              <a href='#contact'>Kontakt</a>
+            </li>
+            <li>
+              <a className='header__some-icon' href='#'>
+                <span class='fab fa-facebook-square'></span>
+                <span className='sr-only'>facebook</span>
+              </a>
+            </li>
+            <li>
+              <a className='header__some-icon' href='#'>
+                <span class='fab fa-linkedin'></span>
+                <span className='sr-only'>linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a className='header__cv' href='#'>
+                CV
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p className='header__intro'>Hei, Mitt navn er</p>
+        <span className='header__name'>Daniel Johansen</span>
+        <h2 className='header__occupation'>Systemutvikler</h2>
+        <p className='header__intro-text'>
+          Jeg er frontend-utvikler for NRK og jobber med nettsiden yr.no. For
+          øyeblikket prøver jeg meg på <a>"CSS only"-prosjekter</a>
+        </p>
+      </div>
+    </section>
+  );
 }
