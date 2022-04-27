@@ -9,6 +9,14 @@
 .header__blur {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .header__nav-list {
